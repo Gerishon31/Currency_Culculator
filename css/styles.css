@@ -1,0 +1,28 @@
+
+html {
+  font-size: 20px;
+
+}
+
+.panel {
+  background:#FF5733;
+  border: solid white;
+}
+
+.results {
+  font-size: 1em;
+  color: #0000;
+}
+
+.dropdown {
+  margin-bottom: 50px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.center {
+  width: 90%;
+  margin: 0 auto 30px;
+}

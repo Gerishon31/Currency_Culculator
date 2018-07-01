@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Convert from or to any currency in the world">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Currency Converter</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="purple">
+    <meta name="apple-mobile-web-app-title" content="Currency Converter">
+    <link rel="apple-touch-icon-precomposed" href="images/android-chrome-192x192.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/android-chrome-512x512.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="purple" />
+  </head>
+  <body>
+<!-- Navigation Bar -->
+<nav class="menu navbar-default navbar-menu">
+  <div class="container">
+      <div class="menu-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">alcwithgoogle 7 days Code Challenge</a>
+      </div>
+  </div>
+</nav>
+<!-- End of navbar-->
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row"id="main">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-primary text-center">
+        <div class="panel-heading">
+          <h4 class="panel-title">Currency Converter</h4>
+          <div id="alert" style="display: none;"> </div>
+        </div>
+        <div class="panel-body">
+          <form class="form-vertical" id="form__converter">
+            <div class="form-group center">
+              <label class="label"class='required'>Amount</label>
+              <input type="number" class="amount form-control" id="amount" placeholder="Enter Amount" name="amount"" min="1">
+            </div>
+            <div class="form-group inline-block">
+                <label class="label">From</label>
+              <select class="currency form-control" id="from_cur" >
+                <option value="" selected>--Currency--</option>
+              </select>
+            </div>
+            <div class="form-group inline-block">
+              <label class="label">To</label>
+              <select class="currency form-control" id="to_cur">
+                <option value="" selected>--Currency--</option>
+              </select>
+            </div>
+          </form>
+          <button type="button" class="btn btn-danger" id="btnConvert">Convert</button>
+          <label id="result" class="inpt" style="text-align: center;"> 0.00</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/idb.js"></script>
+<script type="text/javascript" src="./js/appcontroller.js"></script>
+  </body>
+</html>
